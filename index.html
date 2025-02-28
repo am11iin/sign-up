@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e1e82, #7b5cd6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Conteneur principal */
+        .container {
+            display: flex;
+            width: 950px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Partie gauche avec l'image */
+        .left-section {
+            width: 40%;
+            background-color: #0a043c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 80%;
+        }
+
+        .doctor-image {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Partie droite avec le formulaire */
+        .right-section {
+            width: 60%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4e1e82;
+            margin-bottom: 20px;
+        }
+
+        /* Champs du formulaire */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Groupes d'entrée avec icônes */
+        .input-group {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #4e1e82;
+        }
+
+        /* Style des inputs et select */
+        input, select {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+        }
+
+        /* Bouton */
+        .btn {
+            background-color: #4e1e82;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #7b5cd6;
+        }
+
+        /* Lien de connexion */
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #4e1e82;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section gauche avec l'image -->
+        <div class="left-section">
+            <img src="gig-logo.png" alt="GIG Algeria Logo" class="logo">
+            <img src="doctor.png" alt="Doctor" class="doctor-image">
+        </div>
+
+        <!-- Section droite avec le formulaire -->
+        <div class="right-section">
+            <h2>Rejoignez notre plateforme</h2>
+            <form>
+                <div class="input-group">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Nom et Prénom">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-building icon"></i>
+                    <input type="text" placeholder="Département">
+                </div>
+
+                <div class="input-group">
+                    <select>
+                        <option>Function</option>
+                        <option>Médecin</option>
+                        <option>Pharmacien</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-phone icon"></i>
+                    <input type="tel" placeholder="Numéro de téléphone">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" placeholder="Confirmer mot de passe">
+                </div>
+
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+            <p class="login-link">
+                Vous avez déjà un compte ? <a href="#">Connectez-vous</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
