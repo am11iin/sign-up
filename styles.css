@@ -1,0 +1,132 @@
+/* Styles Généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #342D67);
+    overflow-y: auto;
+}
+
+/* En-tête */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: linear-gradient(to right, #6a11cb, #342D67);
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.login-button {
+    background: #D38B68;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin-right: 100px;
+}
+
+.login-button:hover {
+    background: #B57250;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    width: 950px;
+    background: rgb(245, 243, 243);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 100px auto 30px auto;
+    flex-grow: 1;
+}
+
+.left-section {
+    background: #001f60;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.right-section {
+    width: 60%;
+    padding: 50px;
+    background: #F5F3F3;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.signup-form input, .signup-form select {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    background: #1A0495;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup-form button:hover {
+    background: #14037A;
+}
+
+.signup-form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signup-form a {
+    color: #1A0495;
+    text-decoration: none;
+}
