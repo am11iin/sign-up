@@ -144,37 +144,44 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        width: 95%;
+        flex-direction: column; /* Affiche les sections en colonne */
+        width: 90%; /* Prend presque toute la largeur */
+        align-items: center; /* Centre le contenu */
+        justify-content: center;
     }
 
     .left-section {
-        width: 100%;
+        width: 100%; /* Largeur max pour ne pas dépasser */
         padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .doctor-image {
-        max-height: 250px;
-    }
-
-    .right-section {
-        width: 100%;
-        padding: 30px;
-    }
-
-    .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
+        max-width: 80%; /* Évite que l’image prenne trop de place */
         height: auto;
     }
 
-    .header h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
+    .right-section {
+        width: 100%; /* S'assure que le formulaire prend toute la largeur */
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre le formulaire */
+        justify-content: center;
+        text-align: center;
     }
 
-    .login-button {
-        margin: 0;
+    .signup-form {
+        width: 100%;
+        max-width: 350px; /* Taille maximale du formulaire */
+    }
+
+    .signup-form input,
+    .signup-form select,
+    .signup-form button {
+        width: 100%; /* Assure que les champs prennent toute la largeur */
+        max-width: 300px;
     }
 }
